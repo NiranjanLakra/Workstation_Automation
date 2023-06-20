@@ -7,10 +7,10 @@ edge_options.add_argument("--remote-allow-origins=*")
 driver = webdriver.Edge(options=edge_options)
 
 # navigate to the first page
-driver.get("https://teams.microsoft.com")
+driver.get("https://teams.microsoft.com")                                                       #EDIT
 
 # open a new tab and navigate to the second page
-driver.execute_script("window.open('https://outlook.office.com/mail/');")
+driver.execute_script("window.open('https://outlook.office.com/mail/');")                       #EDIT
 driver.switch_to.window(driver.window_handles[1])
 
 # perform some actions on the second page
@@ -20,7 +20,7 @@ driver.switch_to.window(driver.window_handles[1])
 driver.switch_to.window(driver.window_handles[0])
 
 # navigate to the third page
-driver.execute_script("window.open('https://google.com');")
+driver.execute_script("window.open('https://google.com');")                                     #EDIT
 
 # loop through all open tabs and perform some actions
 while 1>0:
